@@ -4,7 +4,6 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-  
   use {--Telescope for search
 	  'nvim-telescope/telescope.nvim', tag = '0.1.8',
 	  -- or                            , branch = '0.1.x',
@@ -22,8 +21,7 @@ return require('packer').startup(function(use)
   use('ThePrimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
-  
-  use { 
+  use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  requires = {
 		  --LSP Support
