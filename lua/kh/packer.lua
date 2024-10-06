@@ -44,7 +44,13 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 		}
 	}
-
-
+    use {
+            'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+    use {
+            'nvim-lualine/lualine.nvim',
+            requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 
 end)
